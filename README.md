@@ -1,19 +1,21 @@
 # Vitron
-## A Unified Pixel-level Vision LLM for Perceiving, Grounding, Segmenting, Tracking, Generating, Editing
+## A Unified Pixel-level Vision LLM for Perceiving, Grounding, Reasoning, Segmenting, Tracking, Generating, Editing
 
 
-This is the repository that contains the source code for the [Vitron project page](https://next-gpt.github.io/).
+This is the repository that contains the source code for the [Vitron project page](https://vitron-llm.github.io/).
+
 
 If you use Vitron in your project, please kindly cite:
 ```
 @articles{wu2023nextgpt,
-  title={NExT-GPT: Any-to-Any Multimodal LLM},
-  author={Shengqiong Wu, Hao Fei, Leigang Qu, Wei Ji, Tat-Seng Chua},
+  title={Vitron: A Unified Pixel-level Vision LLM for Perceiving, Grounding, Reasoning, Segmenting, Tracking, Generating, Editing},
+  author={Hao Fei, Shengqiong Wu, Hanwang Zhang, Shuicheng Yan},
   journal = {CoRR},
-  volume = {abs/2309.05519},
-  year={2023}
+  volume = {abs/2403.05519},
+  year={2024}
 }
 ```
+
 
 # Website License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
