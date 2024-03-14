@@ -1,5 +1,6 @@
 # Vitron
-## A Unified Pixel-level Vision LLM for Perceiving, Grounding, Reasoning, Segmenting, Tracking, Generating, Editing
+## A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing
+
 
 
 This is the repository that contains the source code for the [Vitron project page](https://vitron-llm.github.io/).
@@ -8,8 +9,8 @@ This is the repository that contains the source code for the [Vitron project pag
 If you use Vitron in your project, please kindly cite:
 ```
 @articles{wu2023nextgpt,
-  title={Vitron: A Unified Pixel-level Vision LLM for Perceiving, Grounding, Reasoning, Segmenting, Tracking, Generating, Editing},
-  author={Hao Fei, Shengqiong Wu, Hanwang Zhang, Shuicheng Yan},
+  title={Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing},
+  author={Hao Fei, Shengqiong Wu, Hanwang Zhang, Tat-Seng Chua, Shuicheng Yan},
   journal = {CoRR},
   volume = {abs/2403.05519},
   year={2024}
