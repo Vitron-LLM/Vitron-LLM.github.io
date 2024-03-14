@@ -59,8 +59,10 @@ button.svelte-jdgjqu {
 }
 
 .bot.svelte-1uvwjgr.svelte-1uvwjgr.svelte-1uvwjgr, .pending.svelte-1uvwjgr.svelte-1uvwjgr.svelte-1uvwjgr {
-    border-color: var(--border-color-primary);
-    background: var(--background-fill-secondary)
+    border-color: #3D8B8B;
+    background: #F4FBEB;
+    /* border-color: var(--border-color-primary);
+    background: var(--background-fill-secondary) */
 }
 
 .user.svelte-1uvwjgr.svelte-1uvwjgr.svelte-1uvwjgr {
