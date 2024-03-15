@@ -8,7 +8,7 @@ This is the repository that contains the source code for the [Vitron project pag
 
 If you use Vitron in your project, please kindly cite:
 ```
-@articles{wu2023nextgpt,
+@articles{hao2024vitron,
   title={Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing},
   author={Hao Fei, Shengqiong Wu, Hanwang Zhang, Tat-Seng Chua, Shuicheng Yan},
   journal = {CoRR},
