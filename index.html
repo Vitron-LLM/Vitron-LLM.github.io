@@ -20,11 +20,13 @@
         gtag('config', 'G-PYVRSFMDRL');
     </script>
 
+    <link href="https://fonts.cdnfonts.com/css/caveat" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
           rel="stylesheet">
     <link rel="icon" href="./static/images/logo.png">
     <link rel="stylesheet" href="./static/css/bulma.min.css">
-    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+<!--    <link rel="stylesheet" href="bulma-carousel.min.css">-->
     <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
     <link rel="stylesheet"
@@ -34,11 +36,18 @@
     <link rel="stylesheet" href="./static/css/index-gradio.css">
     <link rel="stylesheet" href="./static/css/live_theme.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/caveat');
+    </style>
+
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
     <script defer src="./static/js/fontawesome.all.min.js"></script>
-    <script src="./static/js/bulma-carousel.min.js"></script>
-    <script src="./static/js/bulma-slider.min.js"></script>
+<!--    <script src="./static/js/bulma-carousel.min.js"></script>-->
+<!--    <script src="./static/js/bulma-slider.min.js"></script>-->
     <script src="./static/js/index.js"></script>
+
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"-->
+<!--          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
 </head>
 <body>
 
@@ -69,13 +78,15 @@
 
                     <div class="is-size-5 publication-authors" style="margin-top: 10px;">
                         <span class="author-block"><b style="color:#f68946; font-weight:normal">▶ </b><sup>1</sup>Skywork AI, Singapore</span> &nbsp;
-                        <span class="author-block"><b style="color:#008AD7; font-weight:normal">▶ </b><sup>2</sup>National University of Singapore</span> &nbsp;
-                        <span class="author-block"><b style="color:#00d754; font-weight:normal">▶ </b><sup>3</sup>Nanyang Technological University</span>
+                        <span class="author-block"><b
+                                style="color:#008AD7; font-weight:normal">▶ </b><sup>2</sup>National University of Singapore</span> &nbsp;
+                        <span class="author-block"><b
+                                style="color:#00d754; font-weight:normal">▶ </b><sup>3</sup>Nanyang Technological University</span>
                     </div>
 
-<!--                    <div class="is-size-5 publication-authors">-->
-<!--                        <span class="author-block" style="font-size: 15px;">(<sup>*</sup>Correspondence)</span>-->
-<!--                    </div>-->
+                    <!--                    <div class="is-size-5 publication-authors">-->
+                    <!--                        <span class="author-block" style="font-size: 15px;">(<sup>*</sup>Correspondence)</span>-->
+                    <!--                    </div>-->
 
                     <div class="column has-text-centered">
                         <div class="publication-links">
@@ -100,15 +111,15 @@
                 </a>
               </span>
 
-<!--                            <span class="link-block">-->
-<!--                <a href="https://github.com/NExT-GPT/NExT-GPT" target="_blank"-->
-<!--                   class="external-link button is-normal is-rounded is-dark">-->
-<!--                  <span class="icon">-->
-<!--                    <i class="fa fa-database"></i>-->
-<!--                  </span>-->
-<!--                  <span>Dataset</span>-->
-<!--                  </a>-->
-<!--              </span>-->
+                            <!--                            <span class="link-block">-->
+                            <!--                <a href="https://github.com/NExT-GPT/NExT-GPT" target="_blank"-->
+                            <!--                   class="external-link button is-normal is-rounded is-dark">-->
+                            <!--                  <span class="icon">-->
+                            <!--                    <i class="fa fa-database"></i>-->
+                            <!--                  </span>-->
+                            <!--                  <span>Dataset</span>-->
+                            <!--                  </a>-->
+                            <!--              </span>-->
 
                             <!-- Video Link. -->
                             <span class="link-block">
@@ -144,19 +155,19 @@
 </section>
 
 
-
 <section class="section">
     <div class="container is-max-desktop">
         <!-- Paper video. -->
         <div class="columns is-centered has-text-centered">
             <div class="column is-full-width">
-<!--                <h2 class="title is-2">Key</h2>-->
+                <!--                <h2 class="title is-2">Key</h2>-->
                 <div class="content has-text-justified">
                     <p>
                         Existing vision LLMs might still encounter challenges such as <i>superficial instance-level understanding</i>,
                         <i>lack of unified support for both images and videos</i>, and <i>insufficient coverage across various vision tasks</i>.
                         To fill the gaps, we present <b>Vitron</b>, a universal pixel-level vision LLM,
-                        designed for comprehensive understanding (perceiving and reasoning), generating, segmenting (grounding and tracking), editing (inpainting) of both static image and dynamic video content.
+                        designed for comprehensive understanding (perceiving and reasoning), generating, segmenting (grounding and tracking), editing
+                        (inpainting) of both static image and dynamic video content.
                     </p>
                 </div>
                 <div class="content has-text-justified">
@@ -178,7 +189,6 @@
 </section>
 
 
-
 <section class="section">
     <div class="container is-max-desktop">
         <!-- Paper video. -->
@@ -187,14 +197,25 @@
                 <h2 class="title is-2">Video Presentation</h2>
                 <div class="content has-text-justified">
                     <p>
-                        Recent developments of vision large language models (LLMs) have seen remarkable progress, yet still encounter challenges such as superficial instance-level understanding, lack of unified support for both images and videos, and insufficient coverage across various vision tasks.
-                        To fill the gaps, we present <b>Vitron</b>, a universal pixel-level vision LLM designed for comprehensive perceiving, grounding, reasoning, segmenting, tracking, generating, and editing of both static image and dynamic video content.
-                        Utilizing an LLM backbone, Vitron incorporates specialized encoders for images, videos, and regional visuals within its frontend architecture, while as its backend, employing a text-centric invocation strategy for integrating diverse off-the-shelf state-of-the-art modules tailored for an array of vision-related end tasks.
-                        Via this, Vitron supports a spectrum of vision end tasks, spanning visual understanding to visual generation, from low level to high level.
-                        Through joint vision-language alignment and fine-grained meticulous region-aware instruction tuning, Vitron achieves precise pixel-level perception.
-                        We further enhance its capabilities with invocation-oriented instruction tuning, allowing for flexible and precise module invocation for downstream vision tasks.
-                        Demonstrated over 12 visual tasks and evaluated across 22 datasets, Vitron showcases its extensive capabilities in segmentation, nuanced visual understanding, content generation, and editing. Various demonstrations also illustrate Vitron's superior user interactivity and visual manipulation.
-                        Overall, this work illuminates the great potential of developing a more unified and interactive AI-based vision agent, setting new frontiers for future vision research.
+                        Recent developments of vision large language models (LLMs) have seen remarkable progress, yet still encounter challenges such
+                        as superficial instance-level understanding, lack of unified support for both images and videos, and insufficient coverage
+                        across various vision tasks.
+                        To fill the gaps, we present <b>Vitron</b>, a universal pixel-level vision LLM designed for comprehensive perceiving,
+                        grounding, reasoning, segmenting, tracking, generating, and editing of both static image and dynamic video content.
+                        Utilizing an LLM backbone, Vitron incorporates specialized encoders for images, videos, and regional visuals within its
+                        frontend architecture, while as its backend, employing a text-centric invocation strategy for integrating diverse
+                        off-the-shelf state-of-the-art modules tailored for an array of vision-related end tasks.
+                        Via this, Vitron supports a spectrum of vision end tasks, spanning visual understanding to visual generation, from low level
+                        to high level.
+                        Through joint vision-language alignment and fine-grained meticulous region-aware instruction tuning, Vitron achieves precise
+                        pixel-level perception.
+                        We further enhance its capabilities with invocation-oriented instruction tuning, allowing for flexible and precise module
+                        invocation for downstream vision tasks.
+                        Demonstrated over 12 visual tasks and evaluated across 22 datasets, Vitron showcases its extensive capabilities in
+                        segmentation, nuanced visual understanding, content generation, and editing. Various demonstrations also illustrate Vitron's
+                        superior user interactivity and visual manipulation.
+                        Overall, this work illuminates the great potential of developing a more unified and interactive AI-based vision agent, setting
+                        new frontiers for future vision research.
                     </p>
                 </div>
                 <div class="publication-video">
@@ -208,7 +229,6 @@
         <!--/ Paper video. -->
     </div>
 </section>
-
 
 
 <section class="section">
@@ -246,8 +266,10 @@
                             <b>Central Block: Core LLM.</b> Vitron employs the Vicuna (7B, version 1.5).
                         </li>
                         <li>
-                            <b>Backend Block: User Responding & Module Invocation.</b> Vitron employs a <i>text-centric invocation</i> strategy for integrating diverse off-the-shelf SoTA modules,
-                            for supporting a spectrum of vision end tasks, spanning visual understanding to visual generation, from low level to high level.
+                            <b>Backend Block: User Responding & Module Invocation.</b> Vitron employs a <i>text-centric invocation</i> strategy for
+                            integrating diverse off-the-shelf SoTA modules,
+                            for supporting a spectrum of vision end tasks, spanning visual understanding to visual generation, from low level to high
+                            level.
                         </li>
                     </ul>
                     </p>
@@ -281,7 +303,8 @@
                     <ul>
                         <li>
                             <b>Step-I: Overall Vision-Language Alignment Learning.</b>
-                            We map the input vision language features to a unified feature space, thereby enabling it to comprehend input multimodal signals effectively.
+                            We map the input vision language features to a unified feature space, thereby enabling it to comprehend input multimodal
+                            signals effectively.
 
                         </li>
                         <li>
@@ -291,8 +314,10 @@
                         </li>
                         <li>
                             <b>Step-III: Output-side Invocation-oriented Instruction Tuning.</b>
-                            The above second phase of training endows both the LLM and the frontend encoders with the ability to understand vision at the pixel level.
-                            This final step, instruction tuning for invocation, aims to equip the system with the precise capability to execute commands,
+                            The above second phase of training endows both the LLM and the frontend encoders with the ability to understand vision at
+                            the pixel level.
+                            This final step, instruction tuning for invocation, aims to equip the system with the precise capability to execute
+                            commands,
                             allowing the LLM to generate appropriate and correct invocation text.
 
                             Different terminal vision tasks might require distinct invocation commands.
@@ -303,14 +328,16 @@
                                 <li> 3) Invocation command, a meta-instruction for triggering the task module.</li>
                                 <li> 4) Region (optional), specifying a fine-grained vision feature needed for certain tasks,
                                     such as in video tracking or vision editing, where backend modules require this information.
-                                For the region, based on LLM's pixel-level understanding, a bounding box described by the coordinates will be output.</li>
+                                    For the region, based on LLM's pixel-level understanding, a bounding box described by the coordinates will be
+                                    output.
+                                </li>
                             </ul>
                         </li>
                     </ul>
                     </p>
                     <img class="columns is-centered has-text-centered" src="./static/images/structured-response.png" alt="Teaser" width="80%"
                          style="margin:0 auto">
-<!--                    <br>-->
+                    <!--                    <br>-->
                     <figcaption>
                         <p style="text-align: center;">
                             <font color="061E61">
@@ -325,7 +352,6 @@
         </div>
 
 
-
     </div>
 </section>
 
@@ -337,6 +363,7 @@
             <h2 class="title is-2">Demonstrations</h2>
             <br>
         </div>
+
 
         <div class="columns is-centered">
             <div class="column is-full-width">
@@ -351,7 +378,7 @@
                     <div class="wrapper svelte-nab2ao"
                          style="box-sizing: border-box;border-width: 2px;border-style: solid;border-color: #6ac389;border-radius: 11px;padding: 25px;padding-top: 30px;padding-bottom: 30px;">
 
-                        <div class="message-wrap svelte-1uvwjgr">
+                        <div class="message-wrap svelte-1uvwjgr" style="width: 100%;">
 
                             <div class="message-row user-row svelte-1uvwjgr">
                                 <div class="avatar-container svelte-1uvwjgr">
@@ -360,9 +387,10 @@
                                 <div data-testid="user" class="message user svelte-1uvwjgr" dir="ltr" style="border-style: solid;">
                                     <span class="md svelte-9tftx4 chatbot">
                                         <p>Could you help me segment this item?
-                                        <br/><br/>
-                                        <img style="display: inline-block;width: 250px;max-height: 400px;" src="./static/images/imageSegmentation/seg_1.png" >
                                         </p>
+                                        <img style="display: inline-block;width: 350px;max-height: 400px;"
+                                             src="./static/images/imageSegmentation/seg_1.png">
+
                                     </span>
                                 </div>
                             </div>
@@ -373,9 +401,10 @@
                                 <div data-testid="bot" class="message bot svelte-1uvwjgr" dir="ltr" style="border-style: solid;">
                                     <span class="md svelte-9tftx4 chatbot">
                                       <p>Sure! Looks like you're aiming to cut out a grey pot.
-                                        <br/><br/>
-                                        <img style="display: inline-block;width: 250px;max-height: 400px;" src="./static/images/imageSegmentation/seg_2.png" >
-                                      </p>
+                                        </p>
+                                        <img style="display: inline-block;width: 350px;max-height: 400px;"
+                                             src="./static/images/imageSegmentation/seg_2.png">
+
                                     </span>
                                 </div>
                             </div>
@@ -396,11 +425,10 @@
                                 <div data-testid="bot" class="message bot svelte-1uvwjgr" dir="ltr" style="border-style: solid;">
                                     <span class="md svelte-9tftx4 chatbot">
                                         <p>Absolutely! That would be a dog. Let's outline it.</p>
-                                        <br/><br/>
-                                        <img style="display: inline-block;width: 250px;max-height: 400px;" src="./static/images/imageSegmentation/seg_3.png" >
-                                        <!-- <p><audio playsinline="" controls="">
-                                          <source type="audio/wav" src="./static/images/demo1/qplfj20g.wav"></audio>
-                                        </p> -->
+                                        <!--                                        <br/>-->
+                                        <img style="display: inline-block;width: 350px;max-height: 400px;"
+                                             src="./static/images/imageSegmentation/seg_3.png">
+
                                     </span>
                                 </div>
                             </div>
@@ -411,10 +439,10 @@
                                 </div>
                                 <div data-testid="user" class="message user svelte-1uvwjgr latest" dir="ltr" style="border-style: solid;">
                                     <span class="md svelte-9tftx4 chatbot">
-                                        <p>You are smart! Then highlight the item I pointed out here, will you?
-                                            <br/><br/>
-                                            <img style="display: inline-block;width: 250px;max-height: 400px;" src="./static/images/imageSegmentation/seg_4.png" > 
-                                        </p>
+                                        <p>You are smart! Then highlight the item I pointed out here, will you?</p>
+                                            <img style="display: inline-block;width: 350px;max-height: 400px;"
+                                                 src="static/images/imageSegmentation/seg_4.png">
+
                                     </span>
                                 </div>
                             </div>
@@ -424,10 +452,10 @@
                                     <img class="avatar-image svelte-1uvwjgr" src="./static/images/vitron.png" alt="avatar-bot"></div>
                                 <div data-testid="bot" class="message bot svelte-1uvwjgr latest" dir="ltr" style="border-style: solid;">
                                     <span class="md svelte-9tftx4 chatbot">
-                                        <p>Sure thing! Let's focus on the pot in front the dog.
-                                            <br/><br/>
-                                            <img style="display: inline-block;width: 250px;max-height: 400px;" src="./static/images/imageSegmentation/seg_5.png" > 
-                                        </p>
+                                        <p>Sure thing! Let's focus on the pot in front the dog.</p>
+                                            <img style="display: inline-block;width: 350px;max-height: 400px;"
+                                                 src="static/images/imageSegmentation/seg_5.png">
+
                                     </span>
                                 </div>
                             </div>
@@ -456,7 +484,8 @@
                                 <div data-testid="user" class="message user svelte-1uvwjgr" dir="ltr" style="border-style: solid;">
                                     <span class="md svelte-9tftx4 chatbot">
                                         <p>Can you outline the grey hen for me in the video?<br/><br/>
-                                            <video src="./static/images/videoSegmentation/seg_1.mp4" style="display: inline-block;" width="250" playsinline="" controls=""></video>
+                                            <video src="./static/images/videoSegmentation/seg_1.mp4" style="display: inline-block;" width="500"
+                                                   playsinline="" controls=""></video>
                                         </p>
                                     </span>
                                 </div>
@@ -469,7 +498,8 @@
                                     <span class="md svelte-9tftx4 chatbot">
                                       <p>
                                         Just checked out the video, it's a bunch of hens drinking water. Alright, now proceed to track the pine forest scene for you now.<br/><br/>
-                                        <video src="./static/images/videoSegmentation/seg_2.mp4" style="display: inline-block;" width="250" playsinline="" controls=""></video>
+                                        <video src="./static/images/videoSegmentation/seg_2.mp4" style="display: inline-block;" width="500"
+                                               playsinline="" controls=""></video>
                                       </p>
                                     </span>
                                 </div>
@@ -482,7 +512,8 @@
                                     <span class="md svelte-9tftx4 chatbot">
                                       <p>Oh, and can you make sure to focus on the one in the middle at any timeframe in the video.
                                         <br/><br/>
-                                        <video src="./static/images/videoSegmentation/seg_3.mp4" style="display: inline-block;" width="250" playsinline="" controls=""></video>
+                                        <video src="./static/images/videoSegmentation/seg_3.mp4" style="display: inline-block;" width="400"
+                                               playsinline="" controls=""></video>
                                       </p>
                                     </span>
                                 </div>
@@ -495,7 +526,8 @@
                                     <span class="md svelte-9tftx4 chatbot">
                                         <p>Got it, there are actually three penguins. I'll stay on the middle one then.
                                             <br/><br/>
-                                        <video src="./static/images/videoSegmentation/seg_4.mp4" style="display: inline-block;" width="250" playsinline="" controls=""></video>
+                                        <video src="./static/images/videoSegmentation/seg_4.mp4" style="display: inline-block;" width="400"
+                                               playsinline="" controls=""></video>
                                         </p>
                                     </span>
                                 </div>
@@ -526,7 +558,8 @@
                                     <span class="md svelte-9tftx4 chatbot">
                                         <p>Could you tell me what's happening in this photo?
                                         <br/><br/>
-                                        <img style="display: inline-block;width: 250px;max-height: 400px;" src="./static/images/imageUnderstanding/un_1.jpg" > 
+                                        <img style="display: inline-block;width: 400px;max-height: 400px;"
+                                             src="./static/images/imageUnderstanding/un_1.jpg">
                                         </p>
                                     </span>
                                 </div>
@@ -539,7 +572,8 @@
                                     <span class="md svelte-9tftx4 chatbot">
                                         <p>The picture features a group of people riding in a small electric propulsion boat on a body of water. There are three people visible in the boat, with one person sitting in the front, another in the middle, and the third person in the back. The boat appears to be a motorboat with an electric motor, providing a more environmentally friendly mode of transportation. The people seem to be enjoying their time on the water, possibly engaging in recreational activities or simply taking a leisurely ride.
                                             <br/><br/>
-                                            <img style="display: inline-block;width: 250px;max-height: 400px;" src="./static/images/imageUnderstanding/un_2.jpg" > 
+                                            <img style="display: inline-block;width: 400px;max-height: 400px;"
+                                                 src="./static/images/imageUnderstanding/un_2.jpg">
                                         </p>
                                     </span>
                                 </div>
@@ -552,9 +586,10 @@
                                     <span class="md svelte-9tftx4 chatbot">
                                       <p>So what is the possible relationship between the two persons according to the picture？
                                         <br/><br/>
-                                            <img style="display: inline-block;width: 250px;max-height: 400px;" src="./static/images/imageUnderstanding/un_3.png" > 
+                                            <img style="display: inline-block;width: 350px;max-height: 400px;"
+                                                 src="./static/images/imageUnderstanding/un_3.png">
                                         </p>
-                                      </p>
+                                        </p>
                                     </span>
                                 </div>
                             </div>
@@ -565,7 +600,8 @@
                                 <div data-testid="bot" class="message bot svelte-1uvwjgr" dir="ltr" style="border-style: solid;">
                                     <span class="md svelte-9tftx4 chatbot">
                                         <p>In the image, there is a man holding a tennis racket and a chair umpire on a tennis court. The relationship between the two persons is that the chair umpire is responsible for overseeing the match and making decisions related to the game, such as calling balls and strikes, while the man holding the tennis racket is a tennis player participating in the match.  <br/><br/>
-                                            <img style="display: inline-block;width: 250px;max-height: 400px;" src="./static/images/imageUnderstanding/un_4.png" >
+                                            <img style="display: inline-block;width: 350px;max-height: 400px;"
+                                                 src="./static/images/imageUnderstanding/un_4.png">
                                         </p>
                                     </span>
                                 </div>
@@ -616,7 +652,8 @@
                                     <span class="md svelte-9tftx4 chatbot">
                                         <p>Can you tell me what's happening with the girl in the video?
                                         <br/><br/>
-                                        <video src="./static/images/videoUnderstanding/un_1.mp4" style="display: inline-block;" width="250" playsinline="" controls=""></video>
+                                        <video src="./static/images/videoUnderstanding/un_1.mp4" style="display: inline-block;" width="500"
+                                               playsinline="" controls=""></video>
                                         </p>
                                     </span>
                                 </div>
@@ -630,7 +667,8 @@
                                       <p>
                                         Looks like the girl is getting a mini golf lesson there. She's gripping a golf stick, and there's a man bend down, to teach the girl how to swing.
                                         <br/><br/>
-                                        <video src="./static/images/videoUnderstanding/un_2.mp4" style="display: inline-block;" width="250" playsinline="" controls=""></video>
+                                        <video src="./static/images/videoUnderstanding/un_2.mp4" style="display: inline-block;" width="500"
+                                               playsinline="" controls=""></video>
                                       </p>
                                     </span>
                                 </div>
@@ -663,7 +701,6 @@
                 <!--          End  Example-4-->
 
 
-
                 <br/>
                 <!--            Example-5-->
                 <h3 class="title is-4">• Example-5: Vision Generation</h3>
@@ -692,7 +729,8 @@
                                     <span class="md svelte-9tftx4 chatbot">
                                       <p>Absolutely, I've got just the video for you.
                                         <br/><br/>
-                                        <video src="./static/images/visionGeneration/gen_1.mp4" style="display: inline-block;" width="250" playsinline="" controls=""></video>
+                                        <video src="./static/images/visionGeneration/gen_1.mp4" style="display: inline-block;" width="500"
+                                               playsinline="" controls=""></video>
                                       </p>
                                     </span>
                                 </div>
@@ -705,7 +743,8 @@
                                     <span class="md svelte-9tftx4 chatbot">
                                       <p>Hmm, it's cool but not quite what I had in mind. Let me paint a picture for you: how about starting with adding a white dog next to the car?
                                         <br/><br/>
-                                        <img style="display: inline-block;width: 250px;max-height: 400px;" src="./static/images/visionGeneration/gen_2.png" > 
+                                        <img style="display: inline-block;width: 350px;max-height: 400px;"
+                                             src="./static/images/visionGeneration/gen_2.png">
                                       </p>
                                     </span>
                                 </div>
@@ -718,7 +757,8 @@
                                     <span class="md svelte-9tftx4 chatbot">
                                         <p>Got it, I've placed a white dog right next to the car, on its right side, to be precise.
                                             <br/><br/>
-                                            <img style="display: inline-block;width: 250px;max-height: 400px;" src="./static/images/visionGeneration/gen_3.png">
+                                            <img style="display: inline-block;width: 350px;max-height: 400px;"
+                                                 src="./static/images/visionGeneration/gen_3.png">
                                         </p>
                                     </span>
                                 </div>
@@ -742,7 +782,8 @@
                                         <p>
                                             Sure thing, here's your video showcasing the dog making a swift move past the car.
                                             <br><br/>
-                                            <video src="./static/images/visionGeneration/gen_4.mp4" style="display: inline-block;" width="250" playsinline="" controls=""></video>
+                                            <video src="./static/images/visionGeneration/gen_4.mp4" style="display: inline-block;" width="500"
+                                                   playsinline="" controls=""></video>
                                         </p>
                                         
                                     </span>
@@ -754,8 +795,6 @@
                     </div>
                 </div>
                 <!--          End  Example-5 -->
-
-
 
 
                 <br/>
@@ -776,7 +815,8 @@
                                     <span class="md svelte-9tftx4 chatbot">
                                         <p>Could you modify the chair I marked to give it four legs?
                                             <br/><br/>
-                                            <img style="display: inline-block;width: 250px;max-height: 400px;" src="./static/images/imageEditing/edit_1.png">
+                                            <img style="display: inline-block;width: 350px;max-height: 400px;"
+                                                 src="./static/images/imageEditing/edit_1.png">
                                         </p>
                                     </span>
                                 </div>
@@ -790,7 +830,8 @@
                                       <p>
                                         Sure thing! The chair you pointed out is sitting on a metal base. I've swapped that out for four legs instead.
                                         <br/><br/>
-                                            <img style="display: inline-block;width: 250px;max-height: 400px;" src="./static/images/imageEditing/edit_2.png">
+                                            <img style="display: inline-block;width: 350px;max-height: 400px;"
+                                                 src="./static/images/imageEditing/edit_2.png">
                                       </p>
                                     </span>
                                 </div>
@@ -813,7 +854,8 @@
                                     <span class="md svelte-9tftx4 chatbot">
                                         <p>Done. The flower and the wine bottle? Gone. The table's all clear now.
                                         </p><br>
-                                      <img style="display: inline-block;width: 250px;max-height: 400px;" src="./static/images/imageEditing/edit_3.jpg">
+                                      <img style="display: inline-block;width: 350px;max-height: 400px;"
+                                           src="./static/images/imageEditing/edit_3.jpg">
                                     </span>
                                 </div>
                             </div>
@@ -835,7 +877,8 @@
                                     <span class="md svelte-9tftx4 chatbot">
                                       <p>I went ahead and added two white cats lying on the floor. Check out the updated image.</p>
                                       <br>
-                                      <img style="display: inline-block;width: 250px;max-height: 400px;" src="./static/images/imageEditing/edit_4.jpg">
+                                      <img style="display: inline-block;width: 350px;max-height: 400px;"
+                                           src="./static/images/imageEditing/edit_4.jpg">
                                     </span>
                                 </div>
                             </div>
@@ -844,8 +887,6 @@
                     </div>
                 </div>
                 <!--          End  Example-6-->
-
-
 
 
                 <br/>
@@ -865,7 +906,8 @@
                                 <div data-testid="user" class="message user svelte-1uvwjgr" dir="ltr" style="border-style: solid;">
                                     <span class="md svelte-9tftx4 chatbot">
                                         <p>Could you swap out the background for a snowy scene, kind of like a bear strolling through a winter forest.</p>
-                                        <video src="./static/images/videoEditing/bear.mp4" style="display: inline-block;" width="250" playsinline="" controls=""></video>
+                                        <video src="./static/images/videoEditing/bear.mp4" style="display: inline-block;" width="500" playsinline=""
+                                               controls=""></video>
                                     </span>
                                 </div>
                             </div>
@@ -876,7 +918,8 @@
                                 <div data-testid="bot" class="message bot svelte-1uvwjgr" dir="ltr" style="border-style: solid;">
                                     <span class="md svelte-9tftx4 chatbot">
                                       <p>Great, no problem. I've made the adjustments to the background in the video, replacing it directly with a forest covered in white snow. Here's the video with the replacement.</p>
-                                      <video src="./static/images/videoEditing/bear1.mp4" style="display: inline-block;" width="250" playsinline="" controls=""></video>
+                                      <video src="./static/images/videoEditing/bear1.mp4" style="display: inline-block;" width="500" playsinline=""
+                                             controls=""></video>
                                     </span>
                                 </div>
                             </div>
@@ -898,7 +941,8 @@
                                 <div data-testid="bot" class="message bot svelte-1uvwjgr latest" dir="ltr" style="border-style: solid;">
                                     <span class="md svelte-9tftx4 chatbot">
                                       <p>That makes sense. Polar bears typically inhabit the frigid Arctic region, where the climate remains cold year-round. Consequently, they are often found in snowy landscapes or on icy surfaces. Placing a polar bear in a snowy setting aligns more with their natural habitat. </p>
-                                      <video src="./static/images/videoEditing/bear2.mp4" style="display: inline-block;" width="250" playsinline="" controls=""></video>
+                                      <video src="./static/images/videoEditing/bear2.mp4" style="display: inline-block;" width="500" playsinline=""
+                                             controls=""></video>
                                     </span>
                                 </div>
                             </div>
@@ -939,9 +983,7 @@
                         <a href="https://github.com/rese1f/StableVideo">StableVideo</a>,
                         <a href="https://i2vgen-xl.github.io/">I2VGen-XL</a>,
                         and <a href="https://huggingface.co/cerspense/zeroscope_v2_576w">Zeroscope</a>.
-                        We also partially draw inspirations from <a href="https://codi-gen.github.io/">i</a>,
-                        <a href="https://github.com/PKU-YuanGroup/Video-LLaVA">Video-LLaVA</a>,
-                        <a href="https://llava-vl.github.io/">LLaVA</a>
+                        We also partially draw inspirations from <a href="https://next-gpt.github.io/">NExT-GPT</a>.
 
                     </p>
                 </div>
@@ -955,11 +997,12 @@
 <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
         <h2 class="title">BibTeX</h2>
-        <pre><code>@articles{wu2023nextgpt,
-  title={VITRON: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing  },
+        <pre><code>@articles{hao2024vitron,
+  title={Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing},
   author={Hao Fei, Shengqiong Wu, Hanwang Zhang, Tat-Seng Chua, Shuicheng Yan},
   journal={CoRR},
-  year={2023}
+  volume = {abs/2403.05519},
+  year={2024}
 }
 </code></pre>
     </div>
@@ -972,7 +1015,7 @@
             <div class="column is-8">
                 <div class="content">
                     <p style="text-align: center;">
-                        The webpage is built based on <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+                        The webpage is built based on <a href="https://next-gpt.github.io/">NExT-GPT</a>.
                     </p>
                 </div>
             </div>
