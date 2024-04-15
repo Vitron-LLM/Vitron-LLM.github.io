@@ -12,7 +12,6 @@ If you use Vitron in your project, please kindly cite:
   title={Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing},
   author={Hao Fei, Shengqiong Wu, Hanwang Zhang, Tat-Seng Chua, Shuicheng Yan},
   journal = {CoRR},
-  volume = {abs/2403.05519},
   year={2024}
 }
 ```
