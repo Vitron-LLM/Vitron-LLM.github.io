@@ -84,6 +84,13 @@
                                 style="color:#00d754; font-weight:normal">▶ </b><sup>3</sup>Nanyang Technological University</span>
                     </div>
 
+
+
+                    <div class="is-size-2 publication-authors">
+                        <span class="author-block" style="font-size: 20px;">(NeurIPS 2024)</span>
+                    </div>
+
+
                     <!--                    <div class="is-size-5 publication-authors">-->
                     <!--                        <span class="author-block" style="font-size: 15px;">(<sup>*</sup>Correspondence)</span>-->
                     <!--                    </div>-->
@@ -160,14 +167,25 @@
         <!-- Paper video. -->
         <div class="columns is-centered has-text-centered">
             <div class="column is-full-width">
-                <!--                <h2 class="title is-2">Key</h2>-->
+                <h2 class="title is-2">Abstract</h2>
                 <div class="content has-text-justified">
                     <p>
-                        Existing vision LLMs might still encounter challenges such as <i>superficial instance-level understanding</i>,
-                        <i>lack of unified support for both images and videos</i>, and <i>insufficient coverage across various vision tasks</i>.
-                        To fill the gaps, we present <b>Vitron</b>, a universal pixel-level vision LLM,
-                        designed for comprehensive understanding (perceiving and reasoning), generating, segmenting (grounding and tracking), editing
-                        (inpainting) of both static image and dynamic video content.
+                        Recent developments of vision large language models (LLMs) have seen remarkable progress, yet still encounter challenges towards multimodal generalists,
+                        such as <i>coarse-grained instance-level understanding</i>, <i>lack of unified support for both images and videos</i>, and
+                        <i>insufficient coverage across various vision tasks</i>.
+                        In this paper, we present VITRON, a universal pixel-level vision LLM designed for comprehensive understanding, generating, segmenting,
+                        and editing of both static images and dynamic videos.
+                        Building on top of an LLM backbone, <b>Vitron</b> incorporates encoders for images, videos, and pixel-level regional visuals within its frontend modules,
+                        while employing state-of-the-art visual specialists as its backend, via which <b>Vitron</b> supports a spectrum of vision end tasks,
+                        spanning visual comprehension to visual generation, from low level to high level.
+                        To ensure an effective and precise message passing from LLM to backend modules for function invocation,
+                        we propose a novel hybrid method by simultaneously integrating discrete textual instructions and continuous signal embeddings.
+                        Further, we design various pixel-level spatiotemporal vision-language alignment learning for <b>Vitron</b> to reach the best fine-grained visual capability.
+                        Finally, a cross-task synergy module is advised to learn to maximize the task-invariant fine-grained visual features,
+                        enhancing the synergy between different visual tasks. Demonstrated over 12 visual tasks and evaluated across 22 datasets,
+                        <b>Vitron</b> showcases its extensive capabilities in the four main vision task clusters.
+                        Overall, this work illuminates the great potential of developing a more unified multimodal generalist.
+
                     </p>
                 </div>
                 <div class="content has-text-justified">
@@ -177,7 +195,7 @@
                     <figcaption>
                         <p style="text-align: center;">
                             <font color="061E61">
-                                <b>Figure 1:</b> Task support and key features of Vitron.
+                                <b>Figure 1:</b> Vitron supports four 4 vision task clusters, spanning visual comprehension to generation, from low level to high level.
                             </font>
                         </p>
                     </figcaption>
@@ -195,24 +213,29 @@
         <div class="columns is-centered has-text-centered">
             <div class="column is-full-width">
                 <h2 class="title is-2">Video Presentation</h2>
-                <div class="content has-text-justified">
-                    <p>
-                        Recent developments of vision large language models (LLMs) have seen remarkable progress, yet still encounter challenges towards multimodal generalists, such as coarse-grained instance-level understanding, lack of unified support for both images and videos, and insufficient coverage across various vision tasks. 
-                        To fill the gaps, we present <b>Vitron</b>, a universal pixel-level vision LLM designed for comprehensive understanding, generating, segmenting, and editing of both static image and dynamic video content.
-                        Utilizing an LLM backbone, Vitron incorporates specialized encoders for images, videos, and pixel-level regional visuals within its frontend architecture, while as its backend, employing a text-centric invocation strategy for integrating diverse state-of-the-art off-the-shelf modules tailored for an array of vision-related end tasks. 
-                        Via this, Vitron supports a spectrum of vision end tasks, spanning visual understanding to visual generation, from low level to high level.
-                        Through joint vision-language alignment and fine-grained region-aware instruction tuning, Vitron achieves precise pixel-level perception. 
-                        We further enhance its capabilities with invocation-oriented instruction tuning, allowing for flexible and precise module invocation for downstream vision tasks. 
-                        Demonstrated over 12 visual tasks and evaluated across 22 datasets, Vitron showcases its extensive capabilities in the four main vision task clusters, e.g., segmentation, understanding, content generation, and editing. 
-                        Various demonstrations also illustrate Vitron's fortes in visual manipulation and user interactivity. 
-                        Overall, this work illuminates the great potential of developing a more unified and interactive visual multimodal generalist, setting new frontiers for the next vision research.
-                    </p>
-                </div>
+<!--                <div class="content has-text-justified">-->
+<!--                    <p>-->
+<!--                        Recent developments of vision large language models (LLMs) have seen remarkable progress, yet still encounter challenges towards multimodal generalists,-->
+<!--                        such as <i>coarse-grained instance-level understanding</i>, <i>lack of unified support for both images and videos</i>, and-->
+<!--                        <i>insufficient coverage across various vision tasks</i>.-->
+<!--                        In this paper, we present VITRON, a universal pixel-level vision LLM designed for comprehensive understanding, generating, segmenting,-->
+<!--                        and editing of both static images and dynamic videos.-->
+<!--                        Building on top of an LLM backbone, <b>Vitron</b> incorporates encoders for images, videos, and pixel-level regional visuals within its frontend modules,-->
+<!--                        while employing state-of-the-art visual specialists as its backend, via which <b>Vitron</b> supports a spectrum of vision end tasks,-->
+<!--                        spanning visual comprehension to visual generation, from low level to high level.-->
+<!--                        To ensure an effective and precise message passing from LLM to backend modules for function invocation,-->
+<!--                        we propose a novel hybrid method by simultaneously integrating discrete textual instructions and continuous signal embeddings.-->
+<!--                        Further, we design various pixel-level spatiotemporal vision-language alignment learning for <b>Vitron</b> to reach the best fine-grained visual capability.-->
+<!--                        Finally, a cross-task synergy module is advised to learn to maximize the task-invariant fine-grained visual features,-->
+<!--                        enhancing the synergy between different visual tasks. Demonstrated over 12 visual tasks and evaluated across 22 datasets,-->
+<!--                        <b>Vitron</b> showcases its extensive capabilities in the four main vision task clusters.-->
+<!--                        Overall, this work illuminates the great potential of developing a more unified multimodal generalist.-->
+<!--                    </p>-->
+<!--                </div>-->
                 <div class="publication-video">
                     <!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/GrEIgDhOFic" title="Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
-                    <iframe src="https://www.youtube.com/embed/wiGMJzoQVu4"
-                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/wiGMJzoQVu4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -232,7 +255,7 @@
         <!-- Architecture -->
         <div class="columns is-centered">
             <div class="column is-full-width">
-                <h4 class="title is-3">• Architecture</h4>
+                <h4 class="title is-4">• Architecture of <b>Vitron</b></h4>
 
                 <div class="content has-text-justified">
                     <img class="columns is-centered has-text-centered" src="./static/images/frame.png" alt="Teaser" width="95%"
@@ -263,6 +286,14 @@
                         </li>
                     </ul>
                     </p>
+
+                    <p>
+                         Specifically, we design a structured invocation template, including 1) Module name, 2) Invocation command, and 3) Region
+                        (optional) specifying a fine-grained vision feature needed for certain tasks. The feature embeddings
+                        include both task-specific features and task-invariant fine-grained features. The purpose of this design
+                        is to achieve feature decoupling, during which we aim to have the task-invariant fine-grained features
+                        shared as widely as possible among all tasks to facilitate synergy between different tasks.
+                    </p>
                     <br>
 
                     <img class="columns is-centered has-text-centered" src="./static/images/modules.png" alt="Teaser" width="90%"
@@ -285,56 +316,93 @@
         <!-- Alignment -->
         <div class="columns is-centered">
             <div class="column is-full-width">
-                <h2 class="title is-3">• Pixel-aware Vision-Language Understanding Learning</h2>
-
-                <div class="content has-text-justified">
+                <h2 class="title is-4">• Pixel-aware Synergistic Vision-Language Understanding Tuning</h2>
                     <p>
                         We train the Vitron to endow it with robust vision understanding and task execution capabilities, with three distinct phases.
+                    </p>
+                <br>
+                <div class="content has-text-justified" >
+                    <h3 class="title is-5">1) Basic Multimodal Comprehension and Generation Skill Training</h3>
+                    <p style="margin-top: -10px">
+                            Initially, the training equips the multimodal large language model (MLLM) with fundamental multimodal understanding features.
+                            This includes aligning the model's decoder with the encoders for a consistent backend response.
+                    </p>
+                    <p>
                     <ul>
                         <li>
-                            <b>Step-I: Overall Vision-Language Alignment Learning.</b>
-                            We map the input vision language features to a unified feature space, thereby enabling it to comprehend input multimodal
-                            signals effectively.
-
+                            <b>Overall Vision-Language Alignment Learning.</b>
+                            The objective is to harmonize visual and textual inputs to ensure accurate associations.
+                            This involves training the model with predefined pairs from reliable sources, like image-caption and video-caption pairs,
+                            enhancing its ability to generate descriptive texts that match given visuals accurately.
                         </li>
                         <li>
-                            <b>Step-II: Fine-grained Spatiotemporal Vision Grounding Instruction Tuning.</b>
-                            We propose a fine-grained spatiotemporal vision grounding instruction tuning for Vitron.
-                            The core idea is to enable the LLM to ground the fine-grained spatiality of images and the detailed temporality of videos.
+                            <b>Text Invocation Instruction Tuning and Embedding-oriented Decoder Alignment Tuning.</b>
+                            This phase sharpens the model's ability to follow textual commands accurately by using instruction samples.
+                            Additionally, it involves tuning the decoder to align closely with the encoders,
+                            ensuring the embedding signals are closely matched to enhance communication within the model.
+<!--                            <ul>-->
+<!--                                <li> 1) User response output, which directly replies to the user's input.</li>-->
+<!--                                <li> 2) Module name, indicating which function or task is to be executed.</li>-->
+<!--                                <li> 3) Invocation command, a meta-instruction for triggering the task module.</li>-->
+<!--                                <li> 4) Region (optional), specifying a fine-grained vision feature needed for certain tasks,-->
+<!--                                    such as in video tracking or vision editing, where backend modules require this information.-->
+<!--                                    For the region, based on LLM's pixel-level understanding, a bounding box described by the coordinates will be-->
+<!--                                    output.-->
+<!--                                </li>-->
+<!--                            </ul>-->
                         </li>
                         <li>
-                            <b>Step-III: Output-side Invocation-oriented Instruction Tuning.</b>
-                            The above second phase of training endows both the LLM and the frontend encoders with the ability to understand vision at
-                            the pixel level.
-                            This final step, instruction tuning for invocation, aims to equip the system with the precise capability to execute
-                            commands,
-                            allowing the LLM to generate appropriate and correct invocation text.
+                            <b>Embedding-oriented Decoder Alignment Tuning.</b>
+                            Besides using explicit textual instruction to invocate downstream modules, the signal feature embedding/representation (from LLM) should also
+                            be fed to the modules. Thus, we align the feature embedding with all the visual modules’ input encoders via the decoding-side projection layers.
 
-                            Different terminal vision tasks might require distinct invocation commands.
-                            To unify this, we try to standardize the LLM's response output into a structured text format, which includes:
-                            <ul>
-                                <li> 1) User response output, which directly replies to the user's input.</li>
-                                <li> 2) Module name, indicating which function or task is to be executed.</li>
-                                <li> 3) Invocation command, a meta-instruction for triggering the task module.</li>
-                                <li> 4) Region (optional), specifying a fine-grained vision feature needed for certain tasks,
-                                    such as in video tracking or vision editing, where backend modules require this information.
-                                    For the region, based on LLM's pixel-level understanding, a bounding box described by the coordinates will be
-                                    output.
-                                </li>
-                            </ul>
                         </li>
                     </ul>
                     </p>
-                    <img class="columns is-centered has-text-centered" src="./static/images/structured-response.png" alt="Teaser" width="80%"
+
+
+                <div class="content has-text-justified">
+                    <h3 class="title is-5">2) Fine-grained Spatiotemporal Vision Grounding Instruction Tuning</h3>
+
+                    <p style="margin-top: -10px">
+                    The focus is to enhance the model's ability to precisely understand and process both images and videos at a pixel level. The model is trained to accurately map the spatial details of visuals.
+                    </p>
+                    <p>
+
+                    <ul>
+                        <li>
+                            <b>Image Spatial Grounding.</b>
+                                The training is tailored to enable the model to identify specific regions within an image and relate them to text, aiding in tasks like detailed image captioning and segmentation.                        </li>
+                        <li>
+                            <b>Video Spatial-Temporal Grounding.</b>
+                                For videos, the model learns to recognize and describe spatial and temporal aspects, which supports tasks such as video captioning that's contextually grounded and tracking specific video elements.                        </li>
+                        <li>
+                            <b>Grounding-aware Vision QA.</b>
+                                Beyond simple perception, the model is also trained on higher-level visual reasoning tasks. This involves question-answering based on image and video analysis to facilitate deeper semantic understanding through questions directly related to the visual content grounded in previous tasks.
+                        </li>
+                    </ul>
+                    </p>
+
+
+                <div class="content has-text-justified">
+                    <h3 class="title is-5">3) Cross-task Synergy Learning</h3>
+                    <p  style="margin-top: -10px">
+                        To ensure different specialist modules work synergistically in a generalist model, we separate signal feature embeddings into task-specific and task-invariant categories. By sharing task-invariant features widely, the modules can better support each other, enhancing overall system synergy. We introduce a cross-task synergy learning module using adversarial training to differentiate these features. This setup involves specialists making predictions with these features while a discriminator assesses task identity based on shared features alone. When the discriminator fails to recognize the task, the shared features are considered optimally generalized for cross-task application.
+                    </p>
+
+
+                    <img class="columns is-centered has-text-centered" src="./static/images/synergy.png" alt="Teaser" width="48%"
                          style="margin:0 auto">
                     <!--                    <br>-->
                     <figcaption>
                         <p style="text-align: center;">
                             <font color="061E61">
-                                <b>Figure 3:</b> A video tracking example for the structured LLM response for module invocation.
+                                <b>Figure 3:</b> Illustration of the synergy module.
                             </font>
                         </p>
                     </figcaption>
+
+
                 </div>
                 <br/>
 
