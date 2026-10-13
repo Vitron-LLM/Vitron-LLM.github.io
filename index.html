@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniVision | Unified Vision LLMs</title>
+    <meta
+      name="description"
+      content="UniVision is a research thread on unified vision LLMs, connecting pixel-level visual generalists with cross-vision synergy across images, videos, and 3D."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#top" aria-label="UniVision home">
+          <span class="brand-mark"></span>
+          <span class="brand-text">
+            <strong>UniVision</strong>
+            <span>Unified Vision LLMs</span>
+          </span>
+        </a>
+        <nav class="nav">
+          <a href="#top">Overview</a>
+          <a href="#research">Research</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-shell">
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-header">
+            <h1 class="hero-title-line">UniVision: Unified Vision LLMs</h1>
+            <p class="hero-subtitle">
+              A thread from pixel-level unification to cross-vision synergy
+            </p>
+          </div>
+
+          <div class="hero-body">
+            <div class="hero-copy">
+              <p class="hero-lead">
+                Unified large vision models need more than modality coverage.
+                They need a shared visual reasoning surface.
+                UniVision studies how a single large vision model can coordinate
+                fine-grained perception, generation, editing, and cross-vision
+                reasoning across images, videos, 3D, and richer pixel-level
+                interfaces. The goal is not only to connect modalities, but to
+                let them sharpen each other.
+              </p>
+            </div>
+
+            <div class="hero-visual">
+              <div class="hero-visual-frame">
+                <img
+                  src="univision-idea.png"
+                  alt="Concept illustration for Unified Vision LLMs"
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="research" id="research">
+          <div class="section-intro">
+            <p class="eyebrow">Research Papers</p>
+            <p class="section-summary">
+              These works study a common question: how should large vision
+              models unify visual functions and modalities without flattening
+              away the specific priors that make each visual source useful?
+            </p>
+          </div>
+
+          <div class="thread">
+            <article class="paper-card">
+              <div class="paper-head">
+                <div class="paper-meta">
+                  <span class="paper-year">2024</span>
+                  <span class="paper-venue">NeurIPS</span>
+                </div>
+                <h3>
+                  Vitron: A Unified Pixel-level Vision LLM for Understanding,
+                  Generating, Segmenting, Editing
+                </h3>
+              </div>
+              <div class="paper-body">
+                <div class="paper-copy">
+                  <p>Vitron is a universal pixel-level vision LLM spanning static images and
+                    dynamic videos across four major vision task clusters.
+                    Vitron pushes toward a multimodal visual generalist by
+                    combining image, video, and regional encoders with backend
+                    specialists under an LLM backbone. It is designed to support
+                    visual comprehension, generation, segmentation, and editing in
+                    a single system, while preserving precise message passing
+                    between language reasoning and visual execution.
+                  </p>
+                  <ul class="paper-points">
+                    <li>Hybrid instruction passing with discrete text and continuous signal embeddings.</li>
+                    <li>Pixel-level spatiotemporal alignment for fine-grained visual capability.</li>
+                    <li>Cross-task synergy learning across 12 tasks and 22 datasets.</li>
+                  </ul>
+                  <div class="paper-links">
+                    <a class="button button-primary" href="https://vitron-llm.github.io/" target="_blank" rel="noopener noreferrer">
+                      Project Page
+                    </a>
+                    <a class="button button-secondary" href="https://arxiv.org/abs/2412.19806" target="_blank" rel="noopener noreferrer">
+                      Paper
+                    </a>
+                  </div>
+                </div>
+                <div class="paper-figure">
+                  <img
+                    src="assets/vitron.png"
+                    alt="Overview figure for the VITRON paper"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+            </article>
+
+            <article class="paper-card paper-card-alt">
+              <div class="paper-head">
+                <div class="paper-meta">
+                  <span class="paper-year">2026</span>
+                  <span class="paper-venue">CVPR</span>
+                </div>
+                <h3>Poly-V: Modeling Cross-vision Synergy for Unified Large Vision Model</h3>
+              </div>
+              <div class="paper-body">
+                <div class="paper-copy">
+                  <p>
+                    Poly-V is a unified large vision model that treats synergy across image,
+                    video, and 3D as a first-class modeling objective.
+                    Poly-V argues that true unification is not just functional
+                    integration. It builds a sparse Mixture-of-Experts large
+                    vision model with a dynamic modality router, then trains it
+                    with a synergy-aware paradigm so modality-specific priors can
+                    interact, refine one another, and support richer visual
+                    reasoning.
+                  </p>
+                  <ul class="paper-points">
+                    <li>Sparse experts specialize in modality priors while remaining mutually connected.</li>
+                    <li>Synergy-aware tuning combines distillation with object- and relation-level alignment.</li>
+                    <li>Strong gains on 10 benchmarks spanning image, video, 3D, and synergy-heavy reasoning tasks.</li>
+                  </ul>
+                  <div class="paper-links">
+                    <a class="button button-primary" href="https://sqwu.top/PolyV/" target="_blank" rel="noopener noreferrer">
+                      Project Page
+                    </a>
+                    <a class="button button-secondary" href="https://arxiv.org/abs/2603.03564" target="_blank" rel="noopener noreferrer">
+                      Paper
+                    </a>
+                  </div>
+                </div>
+                <div class="paper-figure">
+                  <img
+                    src="assets/poly-v.png"
+                    alt="Overview figure for the Poly-V paper"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer-copy">
+          &copy; Copyright 2026 UniVision: Unified Vision LLMs. All rights reserved.
+        </p>
+        <p class="footer-contact">
+          Contact:
+          <a href="https://haofei.vip/" target="_blank" rel="noopener noreferrer">Hao Fei</a>
+          <a href="mailto:haofei7419@gmail.com">(haofei7419@gmail.com)</a>;
+          <a href="https://sqwu.top/" target="_blank" rel="noopener noreferrer">Shengqiong Wu</a>
+          <a href="mailto:shengqiongwu@gmail.com">(shengqiongwu@gmail.com)</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
